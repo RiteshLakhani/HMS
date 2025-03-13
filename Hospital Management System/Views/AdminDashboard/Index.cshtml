@@ -1,0 +1,380 @@
+﻿@model Hospital_Management_System.Models.AdminDashboardModel
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<!-- Include FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Background and Styling -->
+<style>
+    body {
+        background-color: white;
+        color: #333; /* Dark gray for better readability */
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .dashboard-container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .dashboard-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 15px;
+        background: #f8f9fa; /* Light gray */
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+        background: #f8f9fa; /* Light gray */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: #333;
+        font-weight: bold;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card i {
+            font-size: 35px;
+            margin-bottom: 10px;
+            color: #007bff; /* Blue icons */
+        }
+
+    .btn-refresh {
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: all 0.3s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+        .btn-refresh:hover {
+            background: linear-gradient(45deg, #0056b3, #007bff);
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+    /* Recent Patients Section */
+    .recent-patients {
+        background: #f8f9fa; /* Light gray */
+        padding: 15px;
+        border-radius: 10px;
+        max-height: 200px;
+        overflow-y: auto;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+        .recent-patients:hover {
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .recent-patients ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recent-patients li {
+            padding: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            animation: fadeIn 0.5s ease-in-out;
+            color: #444; /* Slightly darker font */
+        }
+
+            .recent-patients li:last-child {
+                border-bottom: none;
+            }
+
+        .recent-patients i {
+            margin-right: 10px;
+            color: #007bff; /* Blue icons */
+        }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+
+<div class="dashboard-container">
+    <h2 class="dashboard-title">Admin Dashboard</h2>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <p class="text-danger text-center">@TempData["ErrorMessage"]</p>
+    }
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <p class="text-success text-center">@TempData["SuccessMessage"]</p>
+    }
+
+    <!-- Dashboard Statistics -->
+    <div class="row">
+        <!-- Total Patients -->
+        <div class="col-md-3 col-sm-6 mb-4">
+            <a asp-controller="Patients" asp-action="Index" class="card-link">
+                <div class="card">
+                    <i class="fas fa-user-injured"></i>
+                    <h4>Total Patients</h4>
+                    <p>@Model.DashboardCounts.TotalPatients</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Total Doctors -->
+        <div class="col-md-3 col-sm-6 mb-4">
+            <a asp-controller="Doctors" asp-action="Index" class="card-link">
+                <div class="card">
+                    <i class="fas fa-user-md"></i>
+                    <h4>Total Doctors</h4>
+                    <p>@Model.DashboardCounts.TotalDoctors</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Total Payments -->
+        @* <div class="col-md-2 col-sm-6 mb-4">
+            <a asp-controller="Payments" asp-action="Index" class="card-link">
+                <div class="card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h4>Total Payments</h4>
+                    <p>@Model.DashboardCounts.TotalPayments</p>
+                </div>
+            </a>
+        </div> *@
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <a asp-controller="Appointments" asp-action="Index" class="card-link">
+                <div class="card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h4>Total Appointments</h4>
+                    <p>@Model.DashboardCounts.TotalAppointments</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Total Rooms -->
+        <div class="col-md-3 col-sm-6 mb-4">
+            <a asp-controller="Rooms" asp-action="Index" class="card-link">
+                <div class="card">
+                    <i class="fas fa-bed"></i>
+                    <h4>Total Rooms</h4>
+                    <p>@Model.DashboardCounts.TotalRooms</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Recent Entries with Stylish Scroll Effect -->
+    <h3 class="mt-4 custom-heading">Recent Activities</h3>
+    <style>
+        .custom-heading {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            position: relative;
+        }
+
+            .custom-heading::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #007bff;
+                bottom: 0;
+                left: 0;
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+            }
+
+            .custom-heading:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+    </style>
+
+    <div class="row">
+        <!-- Recent Patients -->
+        <!-- Recent Patients -->
+        <div class="col-md-4">
+            <h4 class="custom-heading">Recent Patients</h4>
+            <div class="recent-patients">
+                <ul>
+                    @foreach (var patient in Model.RecentEntries.RecentPatients)
+                    {
+                        <li>
+                            <i class="fas fa-user"></i> @patient.PatientName - @patient.Age years
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+
+        <style>
+            .custom-heading {
+                font-size: 24px;
+                color: #333;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            }
+        </style>
+
+
+        <!-- Recent Doctors -->
+        <div class="col-md-4">
+            <h4 class="custom-heading">Recent Doctors</h4>
+            <div class="recent-patients">
+                <ul>
+                    @foreach (var doctor in Model.RecentEntries.RecentDoctors)
+                    {
+                        <li>
+                            <i class="fas fa-user-md"></i> Dr. @doctor.DoctorName - @doctor.Specialization
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+
+        <!-- Recent Payments -->
+        <div class="col-md-4">
+            <h4 class="custom-heading">Recent Payments</h4>
+            <div class="recent-patients">
+                <ul>
+                    @foreach (var payment in Model.RecentEntries.RecentPayments)
+                    {
+                        <li>
+                            <i class="fas fa-money-bill-wave"></i> ₹@payment.Amount - @payment.PaymentDate.ToString("dd MMM yyyy")
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+
+        <style>
+            .custom-heading {
+                font-size: 24px;
+                color: #333;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            }
+        </style>
+
+    </div>
+
+
+    <!-- Monthly Statistics Chart -->
+    <h3 class="mt-4 custom-heading">Monthly Patient Stats</h3>
+
+    <style>
+        .custom-heading {
+            font-size: 28px;
+            color: #333;
+            font-weight: bold;
+            text-align: center; /* Center align the heading */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            margin-top: 20px; /* Top margin for spacing */
+            margin-bottom: 15px; /* Bottom margin for spacing */
+        }
+    </style>
+
+    <!-- Chart Containers -->
+    <div class="row">
+        <div class="col-md-6">
+            <canvas id="admissionsChart"></canvas>
+        </div>
+        <div class="col-md-6">
+            <canvas id="paymentsChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Refresh Button -->
+    <form asp-action="UpdateDashboard" method="post">
+        <button type="submit" class="btn btn-refresh mt-3">Refresh Dashboard</button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var admissionsData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.MonthlyStats.Admissions));
+        var paymentsData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.MonthlyStats.Payments));
+
+        var admissionLabels = admissionsData.map(item => item.Month);
+        var admissionCounts = admissionsData.map(item => item.TotalAdmissions);
+
+        var paymentLabels = paymentsData.map(item => item.Month);
+        var paymentAmounts = paymentsData.map(item => item.TotalRevenue);
+
+        // Admissions Chart
+        var ctx1 = document.getElementById('admissionsChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: admissionLabels,
+                datasets: [{
+                    label: 'Total Admissions',
+                    data: admissionCounts,
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Payments Chart
+        var ctx2 = document.getElementById('paymentsChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: paymentLabels,
+                datasets: [{
+                    label: 'Total Revenue',
+                    data: paymentAmounts,
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    });
+</script>
+

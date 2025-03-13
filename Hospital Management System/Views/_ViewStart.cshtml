@@ -1,0 +1,23 @@
+﻿@using System.Security.Claims
+
+@{
+    var userRole = "No Role Found";
+
+    if (User.Identity.IsAuthenticated)
+    {
+        var roleClaim = User.FindFirst(ClaimTypes.Role);
+        if (roleClaim != null)
+        {
+            userRole = roleClaim.Value;
+        }
+    }
+
+    if (userRole == "admin@gmail.com")
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}

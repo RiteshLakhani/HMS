@@ -1,0 +1,525 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Hospital Management System.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Hospital Management System.cye09s8nah.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\charts\\css\\morris.css",
+      "PackagePath": "staticwebassets\\charts\\css\\morris.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\charts\\js\\jquery.flot.min.js",
+      "PackagePath": "staticwebassets\\charts\\js\\jquery.flot.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\charts\\js\\jquery.flot.time.min.js",
+      "PackagePath": "staticwebassets\\charts\\js\\jquery.flot.time.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\charts\\js\\morris.min.js",
+      "PackagePath": "staticwebassets\\charts\\js\\morris.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\charts\\js\\raphael-min.js",
+      "PackagePath": "staticwebassets\\charts\\js\\raphael-min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\css\\jquery-jvectormap.css",
+      "PackagePath": "staticwebassets\\css\\jquery-jvectormap.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\css\\red.css",
+      "PackagePath": "staticwebassets\\css\\red.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\css\\themify-icons.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\datatable\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\datatable\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\datatable\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\datatable\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\datatable\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\datatable\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\fontawesome-webfont3e6e.html",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont3e6e.html"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\themify9f24.eot",
+      "PackagePath": "staticwebassets\\fonts\\themify9f24.eot"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\themify9f24.svg",
+      "PackagePath": "staticwebassets\\fonts\\themify9f24.svg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\themify9f24.ttf",
+      "PackagePath": "staticwebassets\\fonts\\themify9f24.ttf"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\themify9f24.woff",
+      "PackagePath": "staticwebassets\\fonts\\themify9f24.woff"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\fonts\\themifyd41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\themifyd41d.eot"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor1.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor1.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor10.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor10.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor11.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor11.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor2.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor2.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor3.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor3.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor4.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor4.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor5.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor5.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor6.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor6.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor7.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor7.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor8.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor8.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\Doctor\\Doctor9.jpg",
+      "PackagePath": "staticwebassets\\images\\Doctor\\Doctor9.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\HealthCare.jpg",
+      "PackagePath": "staticwebassets\\images\\HealthCare.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\R.jpg",
+      "PackagePath": "staticwebassets\\images\\R.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\card-1.jpg",
+      "PackagePath": "staticwebassets\\images\\card-1.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\card-2.jpg",
+      "PackagePath": "staticwebassets\\images\\card-2.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\doctor.jpg",
+      "PackagePath": "staticwebassets\\images\\doctor.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\fav.png",
+      "PackagePath": "staticwebassets\\images\\fav.png"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\logo-dark.png",
+      "PackagePath": "staticwebassets\\images\\logo-dark.png"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\slide1.jpg",
+      "PackagePath": "staticwebassets\\images\\slide1.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\slide2.jpg",
+      "PackagePath": "staticwebassets\\images\\slide2.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\slide3.jpg",
+      "PackagePath": "staticwebassets\\images\\slide3.jpg"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\user1.png",
+      "PackagePath": "staticwebassets\\images\\user1.png"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\user2.png",
+      "PackagePath": "staticwebassets\\images\\user2.png"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\images\\user3.png",
+      "PackagePath": "staticwebassets\\images\\user3.png"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\custom-datatables.js",
+      "PackagePath": "staticwebassets\\js\\custom-datatables.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\custom-flot.js",
+      "PackagePath": "staticwebassets\\js\\custom-flot.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\custom-gmap.js",
+      "PackagePath": "staticwebassets\\js\\custom-gmap.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\custom-morris.js",
+      "PackagePath": "staticwebassets\\js\\custom-morris.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\custom-vector.js",
+      "PackagePath": "staticwebassets\\js\\custom-vector.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\jquery-jvectormap-world-mill.js",
+      "PackagePath": "staticwebassets\\js\\jquery-jvectormap-world-mill.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\jquery-jvectormap.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-jvectormap.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\jquery.vmap.india.js",
+      "PackagePath": "staticwebassets\\js\\jquery.vmap.india.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\jquery.vmap.usa.js",
+      "PackagePath": "staticwebassets\\js\\jquery.vmap.usa.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\modernizr.min.js",
+      "PackagePath": "staticwebassets\\js\\modernizr.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Hospital Management System.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Hospital Management System.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Hospital Management System.props",
+      "PackagePath": "build\\Hospital Management System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Hospital Management System.props",
+      "PackagePath": "buildMultiTargeting\\Hospital Management System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Hospital Management System.props",
+      "PackagePath": "buildTransitive\\Hospital Management System.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

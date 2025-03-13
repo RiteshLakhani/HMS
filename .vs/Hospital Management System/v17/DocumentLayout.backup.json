@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{404C48E3-F682-4DAC-8C4A-306B7075C5EA}|Hospital Management System\\Hospital Management System.csproj|f:\\sem-6\\adv.net\\hospital management system\\hospital management system\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{404C48E3-F682-4DAC-8C4A-306B7075C5EA}|Hospital Management System\\Hospital Management System.csproj|solutionrelative:hospital management system\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404C48E3-F682-4DAC-8C4A-306B7075C5EA}|Hospital Management System\\Hospital Management System.csproj|f:\\sem-6\\adv.net\\hospital management system\\hospital management system\\views\\rooms\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{404C48E3-F682-4DAC-8C4A-306B7075C5EA}|Hospital Management System\\Hospital Management System.csproj|solutionrelative:hospital management system\\views\\rooms\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404C48E3-F682-4DAC-8C4A-306B7075C5EA}|Hospital Management System\\Hospital Management System.csproj|f:\\sem-6\\adv.net\\hospital management system\\hospital management system\\views\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{404C48E3-F682-4DAC-8C4A-306B7075C5EA}|Hospital Management System\\Hospital Management System.csproj|solutionrelative:hospital management system\\views\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\Views\\Rooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "Hospital Management System\\Views\\Rooms\\Index.cshtml",
+              "ToolTip": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\Views\\Rooms\\Index.cshtml",
+              "RelativeToolTip": "Hospital Management System\\Views\\Rooms\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-06T16:21:18.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\Views\\Rooms\\Add.cshtml",
+              "RelativeDocumentMoniker": "Hospital Management System\\Views\\Rooms\\Add.cshtml",
+              "ToolTip": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\Views\\Rooms\\Add.cshtml",
+              "RelativeToolTip": "Hospital Management System\\Views\\Rooms\\Add.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-06T16:23:09.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\Views\\Appointments\\Index.cshtml",
+              "RelativeDocumentMoniker": "Hospital Management System\\Views\\Appointments\\Index.cshtml",
+              "ToolTip": "F:\\Sem-6\\ADV.Net\\Hospital Management System\\Hospital Management System\\Views\\Appointments\\Index.cshtml",
+              "RelativeToolTip": "Hospital Management System\\Views\\Appointments\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-06T16:22:13.069Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

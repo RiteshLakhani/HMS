@@ -1,0 +1,97 @@
+﻿@model Hospital_Management_System.Models.PatientDashboardModel
+
+@{
+    ViewData["Title"] = "Patient Dashboard";
+}
+
+<h2>Patient Dashboard</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3>Patient Details</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>ID:</strong> @Model.PatientID</p>
+        <p><strong>Name:</strong> @Model.Name</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Phone:</strong> @Model.Phone</p>
+    </div>
+</div>
+
+<h3>Appointments</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Appointment ID</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Problem</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model.Appointments)
+        {
+            <tr>
+                <td>@appointment.AppointmentID</td>
+                <td>@appointment.AppointmentDate.ToShortDateString()</td>
+                <td>@appointment.AppointmentTime</td>
+                <td>@appointment.Problem</td>
+                <td>@appointment.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Payments</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Payment ID</th>
+            <th>Service Name</th>
+            <th>Cost</th>
+            <th>Payment Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in Model.Payments)
+        {
+            <tr>
+                <td>@payment.PaymentID</td>
+                <td>@payment.ServiceName</td>
+                <td>@payment.CostOfTreatment</td>
+                <td>@payment.PaymentStatus</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Room Details</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Room ID</th>
+            <th>Room Number</th>
+            <th>Type</th>
+            <th>Allotment Date</th>
+            <th>Discharge Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var room in Model.Rooms)
+        {
+            <tr>
+                <td>@room.RoomID</td>
+                <td>@room.RoomNumber</td>
+                <td>@room.RoomType</td>
+                <td>@room.AllotmentDate.ToShortDateString()</td>
+                <td>@(room.DischargeDate.HasValue ? room.DischargeDate.Value.ToShortDateString() : "N/A")</td>
+            </tr>
+        }
+    </tbody>
+</table>

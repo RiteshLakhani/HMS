@@ -1,0 +1,129 @@
+﻿@model Hospital_Management_System.Models.PatientModel
+
+@{
+    ViewData["Title"] = ViewData["PageTitle"] ?? "Patient Form";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-3">
+        <div class="card-header bg-primary-purple text-white text-center py-3">
+            <h2 class="mb-0">@ViewData["PageTitle"]</h2>
+        </div>
+        <div class="card-body p-4">
+            <form asp-controller="Patients" asp-action="Save" method="post" class="row g-4">
+                <input type="hidden" asp-for="PatientID" />
+
+                @* Row 1 *@
+                <div class="col-md-6">
+                    <label class="form-label">Patient Name</label>
+                    <input asp-for="PatientName" class="form-control input-field" placeholder="Enter patient's full name" required />
+                    <span asp-validation-for="PatientName" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Date of Birth</label>
+                    <input asp-for="DateOfBirth" type="date" class="form-control input-field" required />
+                    <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                </div>
+
+                @* Row 2 *@
+                <div class="col-md-6">
+                    <label class="form-label">Age</label>
+                    <input asp-for="Age" type="number" class="form-control input-field" min="0" max="120" required />
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Phone</label>
+                    <input asp-for="Phone" class="form-control input-field" required />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+
+                @* Row 3 *@
+                <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input asp-for="Email" type="email" class="form-control input-field" required />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Gender</label>
+                    <select asp-for="Gender" class="form-select input-field" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+
+                @* Row 4 *@
+                <div class="col-md-12">
+                    <label class="form-label">Address</label>
+                    <textarea asp-for="Address" class="form-control input-field textarea-field" rows="3" required></textarea>
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+
+                @* Row 5 *@
+                <div class="col-md-12 d-flex align-items-center">
+                    <div class="form-check">
+                        <input asp-for="IsConfirmed" type="checkbox" class="form-check-input" />
+                        <label class="form-check-label">Confirmed</label>
+                    </div>
+                    <span asp-validation-for="IsConfirmed" class="text-danger"></span>
+                </div>
+
+                @* Buttons *@
+                <div class="col-12 text-center mt-3">
+                    <button type="submit" class="btn btn-success action-button">Save</button>
+                    <a href="@Url.Action("Index", "Patients")" class="btn btn-secondary action-button ms-3">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    .bg-primary-purple {
+        background: linear-gradient(135deg, #4B0082, #6A0DAD) !important;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    .card {
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    .form-label {
+        font-weight: 600;
+    }
+
+    .input-field {
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 16px;
+        height: 48px;
+        width: 100%;
+    }
+
+    .textarea-field {
+        height: auto !important;
+        min-height: 100px;
+    }
+
+    .col-md-6, .col-md-12 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .action-button {
+        font-size: 18px;
+        border-radius: 8px;
+        padding: 12px 24px;
+    }
+</style>

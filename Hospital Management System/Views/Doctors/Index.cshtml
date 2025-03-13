@@ -1,0 +1,117 @@
+﻿@model IEnumerable<Hospital_Management_System.Models.DoctorModel>
+
+<div class="row no-margin-padding">
+    <div class="col-md-6">
+        <h3 class="block-title">Doctors</h3>
+    </div>
+    <div class="col-md-6">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">
+                    <span class="ti-home"></span>
+                </a>
+            </li>
+            <li class="breadcrumb-item">Doctors</li>
+            <li class="breadcrumb-item active">All Doctors</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Widget Item -->
+        <div class="col-md-12">
+            <div class="widget-area-2 proclinic-box-shadow">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="widget-title">Doctors List</h3>
+                    <!-- Success and Error Messages -->
+                    <h6 class="text-success">@TempData["SuccessMessage"]</h6>
+
+                    <h6 class="text-danger">@TempData["ErrorMessage"]</h6>
+                    <input type="text" id="searchInput" class="form-control search-box" placeholder="Search anything..." style="max-width: 300px;">
+                </div>
+                <div class="table-responsive mb-3">
+                    <table id="tableId" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Photo</th> <!-- New Column for Image -->
+                                <th>Doctor Name</th>
+                                <th>Date of Birth</th>
+                                <th>Age</th>
+                                <th>Specialization</th>
+                                <th>Experience</th>
+                                <th>Contact Number</th>
+                                <th>Email</th>
+                                <th>Doctor Details</th>
+                                <th>Address</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="doctorTableBody">
+                            @foreach (var doctor in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <img src="@Url.Content($"http://localhost:5202{doctor.ImagePath}")" alt="Doctor Image" class="doctor-image" />
+                                    </td>
+                                    <td>@doctor.DoctorName</td>
+                                    <td>@doctor.DateOfBirth.ToString("dd-MM-yyyy")</td>
+                                    <td>@doctor.Age</td>
+                                    <td>@doctor.Specialization</td>
+                                    <td>@doctor.Experience</td>
+                                    <td>@doctor.ContactNumber</td>
+                                    <td>@doctor.Email</td>
+                                    <td>@doctor.DoctorDetail</td>
+                                    <td>@doctor.Address</td>
+                                    <td>
+                                        <span class="badge @(doctor.IsConfirmed ? "badge-success" : "badge-danger")">
+                                            @(doctor.IsConfirmed ? "Active" : "Inactive")
+                                        </span>
+                                    </td>
+                                    <td class="d-flex justify-content-center">
+                                        <a asp-action="Add" asp-route-DoctorID="@doctor.DoctorID" class="btn btn-sm btn-primary me-2">
+                                            <i class="bi bi-pencil-square"></i> Edit
+                                        </a>
+                                        <form asp-action="Delete" asp-route-DoctorID="@doctor.DoctorID" method="post" class="d-inline-block">
+                                            <button type="submit" class="btn btn-sm btn-danger">
+                                                <i class="bi bi-trash"></i> Delete
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- /Widget Item -->
+    </div>
+</div>
+
+<!-- CSS for Image Styling -->
+<style>
+    .doctor-image {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+</style>
+
+<!-- Script for Search Functionality -->
+<script>
+    document.getElementById("searchInput").addEventListener("keyup", function () {
+        const filter = this.value.toLowerCase();
+        const rows = document.querySelectorAll("#doctorTableBody tr");
+        rows.forEach(row => {
+            const rowText = Array.from(row.children)
+                                .map(cell => cell.textContent.toLowerCase())
+                                .join(" ");
+            row.style.display = rowText.includes(filter) ? "" : "none";
+        });
+    });
+</script>

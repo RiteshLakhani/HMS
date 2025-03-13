@@ -1,0 +1,132 @@
+﻿@model IEnumerable<Hospital_Management_System.Models.AppointmentModel>
+
+<div class="row no-margin-padding">
+    <div class="col-md-6">
+        <h3 class="block-title">Appointment Details</h3>
+    </div>
+    <div class="col-md-6">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">
+                    <span class="ti-home"></span>
+                </a>
+            </li>
+            <li class="breadcrumb-item">Appointments</li>
+            <li class="breadcrumb-item active">Appointment Details</li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <!-- Success and Error Messages -->
+    <h6 class="text-success">@TempData["SuccessMessage"]</h6>
+    <h6 class="text-danger">@TempData["ErrorMessage"]</h6>
+
+    <!-- Filter Form -->
+    <form method="get">
+        <div class="row">
+            <div class="col-md-3">
+                <label>Patient Name:</label>
+                <input type="text" name="patientName" class="form-control"
+                       placeholder="Enter Patient Name"
+                       value="@Context.Request.Query["patientName"]" />
+            </div>
+            <div class="col-md-3">
+                <label>Doctor Name:</label>
+                <input type="text" name="doctorName" class="form-control"
+                       placeholder="Enter Doctor Name"
+                       value="@Context.Request.Query["doctorName"]" />
+            </div>
+
+            <div class="col-md-3">
+                <label>Appointment Date:</label>
+                <input type="date" name="appointmentDate" class="form-control" value="@Context.Request.Query["appointmentDate"]" />
+            </div>
+            <div class="col-md-3">
+                <label>Status:</label>
+                <select name="status" class="form-control">
+                    <option value="">-- Select Status --</option>
+                    <option value="Scheduled" selected="@(Context.Request.Query["status"] == "Scheduled")">Scheduled</option>
+                    <option value="Completed" selected="@(Context.Request.Query["status"] == "Completed")">Completed</option>
+                    <option value="Cancelled" selected="@(Context.Request.Query["status"] == "Cancelled")">Cancelled</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary">
+                <span class="ti-search"></span> Filter
+            </button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">
+                <span class="ti-reload"></span> Reset
+            </a>
+        </div>
+    </form>
+
+    <div class="row mt-4">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var appointment in Model)
+            {
+                <div class="col-md-12">
+                    <div class="widget-area-2 proclinic-box-shadow mb-4">
+                        <h3 class="widget-title">Appointment Details</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Patient Name</strong></td>
+                                        <td>@appointment.PatientName</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Doctor Name</strong></td>
+                                        <td>@appointment.DoctorName</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Appointment Date</strong></td>
+                                        <td>@appointment.AppointmentDate?.ToString("dd-MMM-yyyy")</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Time Slot</strong></td>
+                                        <td>@appointment.AppointmentTime?.ToString(@"hh\:mm")</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Token Number</strong></td>
+                                        <td>@appointment.TokenNumber</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Problem</strong></td>
+                                        <td>@appointment.Problem</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status</strong></td>
+                                        <td>@appointment.Status</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex">
+                                <!-- Edit Appointment Button -->
+                                <a asp-action="Add" asp-route-appointmentID="@appointment.AppointmentID" class="btn btn-success mb-3 me-2">
+                                    <span class="ti-pencil-alt"></span> Edit Appointment
+                                </a>
+
+                                <!-- Delete Appointment Button -->
+                                <a asp-action="Delete" asp-route-appointmentID="@appointment.AppointmentID" class="btn btn-danger mb-3"
+                                   onclick="return confirm('Are you sure you want to delete this appointment?');">
+                                    <span class="ti-trash"></span> Delete Appointment
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-md-12">
+                <div class="alert alert-info text-center">
+                    No appointments found.
+                </div>
+            </div>
+        }
+    </div>
+</div>

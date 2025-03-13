@@ -1,0 +1,131 @@
+﻿@model Hospital_Management_System.Models.RoomModel
+
+@{
+    ViewData["Title"] = ViewData["PageTitle"] ?? "Room Form";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-3">
+        <div class="card-header bg-primary-purple text-white text-center py-3">
+            <h2 class="mb-0">@ViewData["PageTitle"]</h2>
+        </div>
+        <div class="card-body p-4">
+            <h6 class="text-danger">@TempData["ErrorMessage"]</h6>
+            <form asp-controller="Rooms" asp-action="Save" method="post" class="row g-4">
+                <input type="hidden" asp-for="RoomID" />
+
+                <!-- Room Number -->
+                <div class="col-md-6">
+                    <label class="form-label">Room Number</label>
+                    <input asp-for="RoomNumber" type="text" class="form-control input-field" required />
+                    <span asp-validation-for="RoomNumber" class="text-danger"></span>
+                </div>
+
+                <!-- Room Type -->
+                <div class="col-md-6">
+                    <label class="form-label">Room Type</label>
+                    <select asp-for="RoomType" class="form-select input-field" required>
+                        <option value="">Select Room Type</option>
+                        <option value="Single">Single</option>
+                        <option value="Double">Double</option>
+                        <option value="Deluxe">Deluxe</option>
+                        <option value="VIP">VIP</option>
+                        <option value="ICU">ICU</option>
+                        <option value="General">General</option>
+                    </select>
+                    <span asp-validation-for="RoomType" class="text-danger"></span>
+                </div>
+
+
+                <!-- Patient Dropdown -->
+                <div class="col-md-6">
+                    <label class="form-label">Patient Name</label>
+                    <select asp-for="PatientID" class="form-select input-field" required>
+                        <option value="">Select Patient</option>
+                        @foreach (var patient in ViewBag.PatientList as List<Hospital_Management_System.Models.PatientsDropDown>)
+                        {
+                            <option value="@patient.PatientID">@patient.PatientName</option>
+                        }
+                    </select>
+                    <span asp-validation-for="PatientID" class="text-danger"></span>
+                </div>
+
+                <!-- Doctor Dropdown -->
+                <div class="col-md-6">
+                    <label class="form-label">Doctor Name</label>
+                    <select asp-for="DoctorID" class="form-select input-field" required>
+                        <option value="">Select Doctor</option>
+                        @foreach (var doctor in ViewBag.DoctorList as List<Hospital_Management_System.Models.DoctorsDropDown>)
+                        {
+                            <option value="@doctor.DoctorID">@doctor.DoctorName</option>
+                        }
+                    </select>
+                    <span asp-validation-for="DoctorID" class="text-danger"></span>
+                </div>
+
+                <!-- Allotment Date -->
+                <div class="col-md-6">
+                    <label class="form-label">Allotment Date</label>
+                    <input asp-for="AllotmentDate" type="date" class="form-control input-field" required />
+                    <span asp-validation-for="AllotmentDate" class="text-danger"></span>
+                </div>
+
+                <!-- Discharge Date -->
+                <div class="col-md-6">
+                    <label class="form-label">Discharge Date</label>
+                    <input asp-for="DischargeDate" type="date" class="form-control input-field" />
+                    <span asp-validation-for="DischargeDate" class="text-danger"></span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="col-12 text-center mt-3">
+                    <button type="submit" class="btn btn-success action-button">Save</button>
+                    <a href="@Url.Action("Index", "Rooms")" class="btn btn-secondary action-button ms-3">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    .bg-primary-purple {
+        background: linear-gradient(135deg, #4B0082, #6A0DAD) !important;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    .card {
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    .form-label {
+        font-weight: 600;
+    }
+
+    .input-field {
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 16px;
+        height: 48px;
+        width: 100%;
+    }
+
+    .col-md-6, .col-md-12 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .action-button {
+        font-size: 18px;
+        border-radius: 8px;
+        padding: 12px 24px;
+    }
+</style>

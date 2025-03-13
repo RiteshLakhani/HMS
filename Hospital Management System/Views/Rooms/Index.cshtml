@@ -1,0 +1,155 @@
+﻿@model IEnumerable<Hospital_Management_System.Models.RoomModel>
+
+<div class="row no-margin-padding">
+    <div class="col-md-6">
+        <h3 class="block-title">Room Details</h3>
+    </div>
+    <div class="col-md-6">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">
+                    <span class="ti-home"></span>
+                </a>
+            </li>
+            <li class="breadcrumb-item">Rooms</li>
+            <li class="breadcrumb-item active">Room Details</li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-fluid">
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Filter Form -->
+    <form method="get">
+        <div class="row">
+            <div class="col-md-3">
+                <label>Room Number:</label>
+                <input type="text" name="roomNumber" class="form-control"
+                       placeholder="Enter Room Number"
+                       value="@Context.Request.Query["roomNumber"]" />
+            </div>
+            <div class="col-md-3">
+                <label>Room Type:</label>
+                <select name="roomType" class="form-control">
+                    <option value="">-- Select Room Type --</option>
+                    <option value="Single" selected="@(Context.Request.Query["roomType"] == "Single")">Single</option>
+                    <option value="Double" selected="@(Context.Request.Query["roomType"] == "Double")">Double</option>
+                    <option value="Deluxe" selected="@(Context.Request.Query["roomType"] == "Deluxe")">Deluxe</option>
+                    <option value="VIP" selected="@(Context.Request.Query["roomType"] == "VIP")">VIP</option>
+                    <option value="ICU" selected="@(Context.Request.Query["roomType"] == "ICU")">ICU</option>
+                    <option value="General" selected="@(Context.Request.Query["roomType"] == "General")">General</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label>Patient Name:</label>
+                <input type="text" name="patientName" class="form-control"
+                       placeholder="Enter Patient Name"
+                       value="@Context.Request.Query["patientName"]" />
+            </div>
+
+            <div class="col-md-3">
+                <label>Status:</label>
+                <select name="IsConfirmed" class="form-control">
+                    <option value="">-- Select Status --</option>
+                    <option value="True" selected="@(Context.Request.Query["IsConfirmed"] == "True")">True</option>
+                    <option value="False" selected="@(Context.Request.Query["IsConfirmed"] == "False")">False</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary">
+                <span class="ti-search"></span> Filter
+            </button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">
+                <span class="ti-reload"></span> Reset
+            </a>
+        </div>
+    </form>
+
+    <div class="row mt-4">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var room in Model)
+            {
+                <div class="col-md-12">
+                    <div class="widget-area-2 proclinic-box-shadow mb-4">
+                        <h3 class="widget-title">Room Details</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Room Number</strong></td>
+                                        <td>@room.RoomNumber</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Room Type</strong></td>
+                                        <td>@room.RoomType</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Patient Name</strong></td>
+                                        <td>@room.PatientName</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Allotment Date</strong></td>
+                                        <td>@room.AllotmentDate?.ToString("dd-MMM-yyyy")</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Discharge Date</strong></td>
+                                        <td>@room.DischargeDate?.ToString("dd-MMM-yyyy")</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Doctor Name</strong></td>
+                                        <td>@room.DoctorName</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status</strong></td>
+                                        <td>@room.IsConfirmed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex">
+                                <a asp-action="Add" asp-route-roomID="@room.RoomID" class="btn btn-success mb-3 me-2">
+                                    <span class="ti-pencil-alt"></span> Edit Room
+                                </a>
+                                <a asp-action="Delete" asp-route-roomID="@room.RoomID" class="btn btn-danger mb-3"
+                                   onclick="return confirm('Are you sure you want to delete this room?');">
+                                    <span class="ti-trash"></span> Delete Room
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-md-12">
+                <div class="alert alert-info text-center">
+                    No rooms found.
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    // Auto-hide success and error messages after 5 seconds
+    setTimeout(function () {
+        $(".alert").fadeOut("slow");
+    }, 5000);
+</script>
+
